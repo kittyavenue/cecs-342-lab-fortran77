@@ -10,7 +10,12 @@ Write a program in Fortran 77 to sort an array of numbers entered from the keybo
 
 ## Deliverables
 
-Submit your `.f` source code (some compilers use `*.f77` as the file extension, which is also fine), a screenshot of a sample run and output of your program, and a text file with a writeup about your experiences with Fortran 77. Your submission must follow the following rules, *else I will not grade it and you will receive a zero for the submission*:
+Submit the following items through your git repository:
+* Your `.f` source code (some compilers use `*.f77` as the file extension, which is also fine)
+* A screenshot of a sample run and output of your program
+* A `*.txt` file with a writeup about your experiences with Fortran 77.
+  
+Your submission must follow the following rules, *else I will not grade it and you will receive a zero for the submission*:
 
 * Do not use compression on your files
 * Make sure that all significant code is *commented* with your own explanations
