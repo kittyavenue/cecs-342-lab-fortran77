@@ -71,5 +71,70 @@ c 		Binary Search Method
 
 		end
 
+c 		Main Program to call functions and ask user
+
+		program SORTING
+
+		integer n, i, temp, a(10),binarySearch
+
+		PRINT *,"Enter size of array: "
+
+		READ(*,*) n
+		
+		PRINT *, "Enter numbers to add in the array: "
+
+		do 400 i=1,n,1
+
+		READ(*,*) temp
+
+		a(i) = temp
+
+400 	continue
+
+		call insertionsort(a,n)
+
+		PRINT *,"Sorted Array:"
+
+		do 500 i=1,n,1
+
+		write(*,*) a(i)
+
+500	continue
+
+600 	if(1.EQ.1) then
+
+		PRINT *,"Enter number to look up or -1 to exit:"
+
+		READ(*,*) temp
+
+		if(temp.EQ.-1)then
+
+		go to 700
+
+		else
+
+		j = binarySearch(a,temp,n)
+
+		endif
+
+		if(j.EQ. -1)then
+
+		PRINT *,"Number is not in the array"
+
+		else
+
+		WRITE(*,*) "Number location in array:",j
+
+		endif
+
+		go to 600
+
+700	endif   
+
+		STOP
+
+		END
+
+
 
 		     
