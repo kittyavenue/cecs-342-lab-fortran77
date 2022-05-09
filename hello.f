@@ -25,7 +25,7 @@ c 		Insertion Sort Method
 
 		a(j+1) = temp
 
-100		continue
+100	continue
 
 		return
 
