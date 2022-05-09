@@ -30,4 +30,46 @@ c 		Insertion Sort Method
 		return
 
 		end
+		
+c 		Binary Search Method 
+
+		integer function binarySearch(a,x,n)
+
+		integer a(10),x,n
+
+		integer low,high
+
+		low=1
+
+		high=n
+
+300 	if(low .LE. high) then
+
+		binarySearch = (low + high)/2
+
+		if(a(binarySearch) .EQ. x)then
+
+		return
+
+		elseif(a(binarySearch) .LT. x)then
+
+		low = binarySearch+1
+
+		else
+
+		high = binarySearch-1
+
+		endif
+
+		go to 300
+
+		endif
+
+		binarySearch = -1
+
+		return
+
+		end
+
+
 		     
